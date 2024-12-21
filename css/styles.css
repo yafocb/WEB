@@ -6,13 +6,8 @@
 
 /* font apply */
 @font-face {
-    font-family: 'DOSIyagiMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSIyagiMedium.woff2') format('woff2');
+    font-family: 'NeoDunggeunmo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-/* :root {
-    font-family: 'DOSPilgiMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2') format('woff2');
-} */
