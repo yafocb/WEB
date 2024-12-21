@@ -5,7 +5,7 @@ const COORDS = "coords";
 
 function getWeather(latitude, longitude) {
   fetch(
-    // 자꾸 이상한 곳으로 잡히니 고정 위도 경도로 사용
+    // 자꾸 이상한 곳으로 잡히니 고정 위도 경도로 사용..할라는데 깃헙에선 잘..되는..것..같은데....
     `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
   )
     .then(function (response) {
