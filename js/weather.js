@@ -40,14 +40,14 @@ function askForCoords() {
   navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoErr);
 }
 
-// 고정 위도경도라 무쓸모
+
 function loadCoords() {
   const loadedCoords = localStorage.getItem(COORDS);
   if (loadedCoords === null) {
     askForCoords();
   } else {
     const parseCoords = JSON.parse(loadedCoords);
-    // getWeather(35.8714354, 128.601445);
+    // getWeather(35.8714354, 128.601445); 대구 위경도 고정용
     getWeather(parseCoords.latitude, parseCoords.longitude);
   }
 }
