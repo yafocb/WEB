@@ -1,0 +1,164 @@
+@import "reset.css";
+@import "variables.css";
+
+body {
+  background-color: rgb(39, 45, 61);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.clicked {
+  color: #7a8c8d;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.form-div,
+.clock,
+.toDo,
+.toDo__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  font-size: 150px;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  cursor: default;
+}
+
+.clock h1 {
+  background-color: var(--back_color);
+  border-bottom: var(--border_line);
+  border-radius: 5px;
+}
+
+.form__input,
+.toDo__input {
+  border: none;
+  background-color: var(--back_color);
+  border-bottom: var(--border_line, 3px);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.8);
+  animation: fadeIn 2s linear;
+}
+
+.form__input {
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+}
+
+.form__input::placeholder,
+.toDo__input::placeholder {
+  font-family: 'DOSPilgiMedium';
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+
+.greetings {
+  font-size: 50px;
+  padding: 4px 5px 0px 11px;
+  border-radius: 2px;
+  background-color: var(--back_color);
+  border-bottom: var(--border_line);
+  border-radius: 5px;
+  animation: fadeIn 2s linear;
+  cursor: default;
+}
+
+.toDo {
+  margin-top: 30px;
+}
+
+.toDo__input {
+  padding-top: 5px;
+  width: 200px;
+  height: 30px;
+  font-size: 25px;
+}
+
+.toDo__list {
+  margin-top: 10px;
+  animation: fadeIn 1s linear;
+  position: relative;
+}
+
+.toDoList {
+  position: absolute;
+  top: 10px;
+  width: 300px;
+}
+
+.toDoList li {
+  animation: fadeIn 1s linear;
+}
+
+.toDoList li span {
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  cursor: default;
+}
+
+button {
+  margin-right: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.weather {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 32px;
+  padding: 3px 7px 2px 7px;
+  text-align: center;
+  background-color: var(--back_color);
+  border-radius: 3px;
+  font-size: 30px;
+  font-style: italic;
+  cursor: default;
+}

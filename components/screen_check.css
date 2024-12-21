@@ -1,0 +1,51 @@
+@import "../css/variables.css";
+
+.screen-small_check {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--v_screen);
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.screen-small_check > span {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: black;
+    font-weight: 900;
+    font-size: 80px;
+}
+
+.screen-small_check > img {
+    width: 50vw;
+    height: 50vw;
+    animation: spotlight infinite 3s ease-in-out;
+}
+
+@keyframes spotlight {
+    0% {
+        transform: scale(100%);
+        opacity: 100%;
+    }
+    50% {
+    transform: scale(125%);
+    opacity: 33%;
+    }
+    100% {
+        transform: scale(100%);
+        opacity: 100%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .screen-small_check {
+        display: none;
+    }
+}

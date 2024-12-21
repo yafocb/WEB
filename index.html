@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- pixel asset들 활용하여 도트 컨셉으로 rebuilding -->
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Good Day</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="clock">
+      <h1>00:00</h1>
+    </div>
+    <div class="form-div">
+      <form class="form form">
+        <input
+          type="text"
+          placeholder="TYPE YOUR NAME HERE!"
+          class="form__input"
+        />
+      </form>
+      <h4 class="greetings greetings"></h4>
+    </div>
+    <div class="toDo">
+      <form action="" class="toDoForm">
+        <input type="text" placeholder="WRITE A TO DO" class="toDo__input" />
+      </form>
+    </div>
+    <div class="toDo__list">
+      <ul class="toDoList"></ul>
+    </div>
+    <span class="weather"></span>
+    <div class="screen-small_check"><span>SCREEN IS TOO SMALL😭</span>
+      <img src="./images/screen.png">
+    </div>
+
+    <script src="./js/background.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+  </body>
+</html>
