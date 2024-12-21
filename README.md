@@ -1,5 +1,5 @@
 # toDoWeb
-[PAGE LINK](http://www.google.co.kr)
+[PAGE LINK](https://yafocb.github.io/WEB/)
 - - -
 ## 페이지 설명
 ![main](https://github.com/user-attachments/assets/b2002012-ddc0-4512-ab58-73e9f31178ee)
